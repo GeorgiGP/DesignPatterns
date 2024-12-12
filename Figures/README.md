@@ -9,8 +9,8 @@ This project implements a program that works with 2D geometric figures. Initiall
 - **Triangle** — Defined by three sides, specified by their lengths.
 - **Circle** — Defined by a single radius.
 - **Rectangle** — Defined by two sides, specified by their lengths.
-- **Infinite many others 2D** - just make a constructor for new one
-- (Triangle is the template example)
+- **Polygon with N many sides** 
+- **Infinite many others 2D** - just make a constructor for new one 
 
 For all figures, it is possible to calculate their perimeter. Figures in this program are immutable. The specific properties of the figures (e.g., sides of a triangle, radius of a circle) cannot be accessed directly, but the program provides functionality to calculate their perimeter.
 
