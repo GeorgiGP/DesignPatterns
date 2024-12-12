@@ -2,14 +2,16 @@
 
 ## Introduction
 
-This project implements a program that works with 2D geometric figures. Initially, it supports a limited set of figures, but the program is designed to be easily extensible, allowing for the addition or removal of figures in the future.
+This project implements a program that works with 2D geometric figures. Initially, it supports a limited set of figures, but the program is designed to be easily extensible, allowing for future additions or removal of figures.
 
 ### Supported Figures
 
 - **Triangle** — Defined by three sides, specified by their lengths.
 - **Circle** — Defined by a single radius.
 - **Rectangle** — Defined by two sides, specified by their lengths.
-- **Polygon with N many sides** 
+- **Polygon with N many sides**
+- **Pentagon**
+- **Hexagon**
 - **Infinite many others 2D** - just make a constructor for new one 
 
 For all figures, it is possible to calculate their perimeter. Figures in this program are immutable. The specific properties of the figures (e.g., sides of a triangle, radius of a circle) cannot be accessed directly, but the program provides functionality to calculate their perimeter.
@@ -17,9 +19,14 @@ For all figures, it is possible to calculate their perimeter. Figures in this pr
 ### String Representation of Figures
 
 All figures can be represented as a string. The format is as follows:
-- **Triangle**: `"triangle 10 20 30"` — A triangle with sides 10, 20, and 30.
+- **Triangle**: `"triangle 20 20 30"` — A triangle with sides 20, 20, and 30.
 - **Circle**: `"circle 2.2"` — A circle with a radius of 2.2.
 - **Rectangle**: `"rectangle 4 5"` — A rectangle with side lengths of 4 and 5.
+- **Polygon**: `"polygon 4 5 5 9"` — A polygon with 4 sides.
+- **Polygon**: `"polygon 4 5 5 9 6 20 30 25"` — A polygon with 8 sides.
+- **Hexagon**: `"hexagon 4 5 9 7 2 3"`
+- **Pentagon**: `"hexagon 4 5 9 7 2"`
+- and so on...
 
 Your solution should allow the user to:
 - Create a figure from its string representation.
