@@ -62,7 +62,25 @@ Processing: file3.txt [#########.....] 60%  (Estimated time: 30s)
 ```
 
 ---
-
+## Some file directory
+```
+/home/user/documents/
+├── file1.txt 
+├── file2.pdf 
+├── folderA/ 
+│   ├── fileA1.txt 
+│   ├── fileA2.log  
+│   ├── symlink_to_folderB -> ../folderB/
+│   └── shortcut_to_fileB1.lnk -> ../folderB/fileB1.txt
+├── folderB/ 
+│   ├── fileB1.txt 
+│   ├── fileB2.csv 
+│   └── nestedFolder/
+│       ├── fileN1.docx
+│       ├── fileN2.json
+│       └── anotherSymlink -> ../../folderA/
+└── checksums.txt
+```
 ## Example Workflows
 
 ### Example 1
