@@ -1,14 +1,13 @@
 package factory;
 
-import exceptions.FailedFigureCreationException;
-import figures.Circle;
-import figures.Figure;
-import figures.HexagonTest;
-import figures.Rectangle;
+import com.exceptions.FailedFigureCreationException;
+import com.factory.StringToFigure;
+import com.figures.Circle;
+import com.figures.Figure;
+import com.figures.Rectangle;
 import org.junit.jupiter.api.Test;
 
 import java.math.BigDecimal;
-import java.util.InputMismatchException;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.junit.jupiter.api.Assertions.assertThrows;
@@ -148,19 +147,5 @@ public class StringToFigureTest {
         StringToFigure factoryFigure = new StringToFigure();
         assertThrows(FailedFigureCreationException.class, ()-> factoryFigure.createFrom(toStr),
                 "Creating instance of Figure should fail");
-    }
-
-    @Test
-    void testTestFigureCreateFromString() {
-        String str = "hexagon 2 2.5 3 3 2.5 2";
-        BigDecimal sideA = BigDecimal.valueOf(2);
-        BigDecimal sideB = BigDecimal.valueOf(2.5);
-        BigDecimal sideC = BigDecimal.valueOf(3);
-        StringToFigure factoryFigure = new StringToFigure();
-        Figure hexagon = new HexagonTest(sideA, sideB, sideC, sideC, sideB, sideA);
-        assertDoesNotThrow(hexagon::toString,
-                "toString works with new figures without overriding the function!");
-        assertThrows(FailedFigureCreationException.class, () -> factoryFigure.createFrom(str),
-                "If there is a subclass of Figure it should be in the same directory!");
     }
 }

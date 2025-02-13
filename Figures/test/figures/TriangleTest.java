@@ -1,5 +1,7 @@
 package figures;
 
+import com.figures.Figure;
+import com.figures.Triangle;
 import org.junit.jupiter.api.Test;
 
 import java.math.BigDecimal;

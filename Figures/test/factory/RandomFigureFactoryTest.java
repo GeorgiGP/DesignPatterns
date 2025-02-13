@@ -1,9 +1,11 @@
 package factory;
 
-import figures.Circle;
-import figures.Figure;
-import figures.Rectangle;
-import figures.Triangle;
+import com.factory.FigureFactory;
+import com.factory.RandomFigureFactory;
+import com.figures.Circle;
+import com.figures.Figure;
+import com.figures.Rectangle;
+import com.figures.Triangle;
 import org.junit.jupiter.api.Test;
 
 import java.math.BigDecimal;

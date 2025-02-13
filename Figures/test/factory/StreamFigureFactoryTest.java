@@ -1,9 +1,11 @@
 package factory;
 
-import exceptions.FailedFigureCreationException;
-import figures.Circle;
-import figures.Figure;
-import figures.Triangle;
+import com.exceptions.FailedFigureCreationException;
+import com.factory.FigureFactory;
+import com.factory.StreamFigureFactory;
+import com.figures.Circle;
+import com.figures.Figure;
+import com.figures.Triangle;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 

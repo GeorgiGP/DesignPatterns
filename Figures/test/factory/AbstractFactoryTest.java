@@ -1,9 +1,10 @@
 package factory;
 
-import figures.Circle;
-import figures.Figure;
-import figures.FigureCollection;
-import figures.Triangle;
+import com.factory.AbstractFactory;
+import com.figures.Circle;
+import com.figures.Figure;
+import com.collection.FigureCollection;
+import com.figures.Triangle;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 

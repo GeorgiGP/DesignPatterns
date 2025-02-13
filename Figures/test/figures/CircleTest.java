@@ -1,6 +1,8 @@
 package figures;
 
 
+import com.figures.Circle;
+import com.figures.Figure;
 import org.junit.jupiter.api.Test;
 
 import java.math.BigDecimal;
