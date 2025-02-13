@@ -83,6 +83,11 @@ Processing: file3.txt [#########.....] 60%  (Estimated time: 30s)
 ```
 ## Example Workflows
 
+![image](https://github.com/user-attachments/assets/6916f67b-edb4-43cb-bc7e-862544f281d7)
+
+
+### if a node is in green, program will signal that the progress of the file is saved and has already been processed, at the end checksums file will contain all checksums of the leaves and the shortcuts raw file
+
 ### Example 1
 ```
 -m=calculate -p=C:..\..\ -a=md5 -c=checks/checksums.xml
