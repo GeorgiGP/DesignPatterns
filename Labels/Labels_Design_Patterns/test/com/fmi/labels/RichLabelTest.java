@@ -10,13 +10,14 @@ public class RichLabelTest {
     {
         // Arrange
         var expectedText = "test";
+        Label label = new SimpleTextLabel(expectedText);
         var expectedColor = "red";
         var expectedFont = "Arial";
         int expectedFontSize = 16;
-        Label label = new RichLabel(expectedText, expectedFontSize, expectedFont, expectedColor);
+        Label labelRes = new RichLabel(label, expectedFontSize, expectedFont, expectedColor);
 
         // Act
-        var actualText = label.getText();
+        var actualText = labelRes.getText();
 
         // Assert
         assertTrue(actualText.contains(expectedText));

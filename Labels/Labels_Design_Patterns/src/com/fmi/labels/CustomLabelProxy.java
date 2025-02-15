@@ -7,11 +7,16 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class CustomLabelProxy implements Label {
-    private Label label = null;
+    private Label label;
 
     private final int timeout;
     private int currentTime;
     private static final int MIN_TIMEOUT_TIME = 1;
+
+    public CustomLabelProxy(@NotNull Label label, int timeout) {
+        this.label = label;
+        this(timeout);
+    }
 
     public CustomLabelProxy(int timeout) {
         if (timeout < MIN_TIMEOUT_TIME) {
