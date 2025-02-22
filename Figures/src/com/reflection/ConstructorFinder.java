@@ -35,8 +35,7 @@ public class ConstructorFinder {
                     Arrays.stream(parameterTypes).allMatch(type -> type == BigDecimal[].class)) {
                 containsVarArgs = constructor;
             }
-            if (parameterTypes.length >= 0 &&
-                    Arrays.stream(parameterTypes).allMatch(type -> type == BigDecimal.class)) {
+            if (Arrays.stream(parameterTypes).allMatch(type -> type == BigDecimal.class)) {
                 return constructor;
             }
         }
