@@ -36,7 +36,7 @@ public class Main {
         if (Files.notExists(folderPath)) {
             Files.createDirectories(folderPath);
         }
-        byte[] bytes = new byte[1024 * 1024];
+        byte[] bytes = new byte[1024 * 1024 * 1024];
         new Random().nextBytes(bytes);
         Files.write(folderPath.resolve("1MB.txt"), bytes);
     }
